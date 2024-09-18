@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<body>
+    <h3>Contact Page:</h3>
+    <form action="mailto:yourname@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+      
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+      
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+      
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      
+        <label for="info">Additional Information:</label>
+        <input type="text" id="info" name="info"><br><br>
+      
+        <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe">
+          Subscribe to our newsletter
+        </label><br><br>
+      
+        <fieldset>
+          <legend>Preferred Contact Method:</legend>
+          <label>
+            <input type="radio" name="contact_method" value="email" checked>
+            Email
+          </label>
+          <label>
+            <input type="radio" name="contact_method" value="phone">
+            Phone
+          </label>
+        </fieldset><br><br>
+      
+        <button type="submit">Send</button><br><br>
+        <button type="reset">Reset</button>
+      </form>
+      
+</body>
+</html>
